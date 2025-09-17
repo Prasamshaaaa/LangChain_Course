@@ -1,71 +1,82 @@
-LangChain for LLM Application Development
+# LangChain for LLM Application Development
 
-Welcome to my LangChain for LLM Application Development repository! This repo contains all course materials, exercises, and practical examples from the short course taught by Harrison Chase and Andrew Ng.
+Welcome to my **LangChain for LLM Application Development** repository!
 
-LangChain is a powerful framework that expands the capabilities of Large Language Models (LLMs) for application development, allowing you to build intelligent, conversational, and reasoning-based applications.
+This repository contains all course materials, exercises, and practical examples from the short course taught by **Harrison Chase** and **Andrew Ng**.
 
-Course Overview
+**LangChain** is a powerful framework that expands the capabilities of Large Language Models (LLMs) for application development, enabling you to build intelligent, conversational, and reasoning-based applications.
 
-You will gain hands-on experience with:
+---
 
-Models, Prompts, and Output Parsers – Call LLMs, craft prompts, and parse responses.
+## Course Overview
 
-Memories for LLMs – Store and manage conversation context with buffer, window, token, and summary memories.
+By working through this course, you will gain hands-on experience with:
 
-Chains – Create sequences of operations using LLMChain, SimpleSequentialChain, SequentialChain, and RouterChain.
+* **Models, Prompts, and Output Parsers** – Call LLMs, craft prompts, and parse responses.
+* **Memories for LLMs** – Store and manage conversation context using buffer, window, token, and summary memories.
+* **Chains** – Create sequences of operations with `LLMChain`, `SimpleSequentialChain`, `SequentialChain`, and `RouterChain`.
+* **Question Answering over Documents** – Apply LLMs to proprietary data using retrieval-augmented generation (RAG) with vector embeddings.
+* **Agents** – Build reasoning agents that can interact with tools and Python code.
+* **Evaluation and Example Generation** – Generate examples and evaluate model predictions using LLM-assisted grading.
 
-Question Answering over Documents – Apply LLMs to proprietary data using retrieval-augmented generation (RAG) with vector embeddings.
+---
 
-Agents – Build reasoning agents that can interact with tools and Python code.
+## Repository Structure
 
-Evaluation and Example Generation – Generate examples and evaluate model predictions using LLM-assisted grading.
-
-Repository Structure
+```
 LangChain_Course/
 │
-├── 01_Models_Prompts_Parsers.ipynb         
-├── 02_Memories_for_LLMs.ipynb             
-├── 03_Chains.ipynb                         
-├── 04_QA_over_Documents.ipynb              
-├── 05_Agents.ipynb                         
-├── Data/                                   
+├── 01_Models_Prompts_Parsers.ipynb
+├── 02_Memories_for_LLMs.ipynb
+├── 03_Chains.ipynb
+├── 04_QA_over_Documents.ipynb
+├── 05_Agents.ipynb
+├── Data/
 │   └── OutdoorClothingCatalog_1000.csv
-├── README.md                               
-└── requirements.txt                        
+├── README.md
+└── requirements.txt
+```
 
-Getting Started
+---
 
-Clone the repo:
+## Getting Started
 
+1. **Clone the repository**
+
+```bash
 git clone https://github.com/yourusername/LangChain_Course.git
 cd LangChain_Course
+```
 
+2. **Create a virtual environment**
 
-Create a virtual environment:
-
+```bash
 python -m venv venv
-source venv/bin/activate      # Linux/Mac
-venv\Scripts\activate         # Windows
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
 
+3. **Install dependencies**
 
-Install dependencies:
-
+```bash
 pip install -r requirements.txt
+```
 
+4. **Add your OpenAI API key**
 
-Add your OpenAI API key in a .env file:
+Create a `.env` file in the project root:
 
+```
 OPENAI_API_KEY=your_openai_api_key_here
+```
 
+5. **Open and run the Jupyter notebooks** to explore all examples.
 
-Open and run the Jupyter notebooks to explore the examples.
+---
 
-Learning Outcomes
+## Learning Outcomes
 
-Build complex LLM applications using LangChain.
-
-Implement conversation memory and multi-step reasoning chains.
-
-Apply LLMs to real-world data for retrieval and QA.
-
-Gain experience with LangChain Agents and evaluation techniques.
+* Build complex LLM applications using LangChain.
+* Implement conversation memory and multi-step reasoning chains.
+* Apply LLMs to real-world data for retrieval and QA.
+* Gain experience with LangChain Agents and evaluation techniques.
